@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<div class="wrap">
+		<section class="origin-content">
+			<form>
+				<textarea name="origin-text" id="origin-text" class="origin-text">
+![喵](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1490701111175&di=61f45b923e4523ac86e7552e51ef7d21&imgtype=0&src=http%3A%2F%2Fimg01.sogoucdn.com%2Fapp%2Fa%2F100540002%2F687443.jpg)
+# 这是一个超级简易的markdown解析器
+可用`tab`缩进！
+## 1.测试一下
+* 无序列表
+	* item1
+		* item1
+		* item2
+	* item2
+	* item3
+* 有序列表
+	1. item1
+	2. item2
+		1. item2.1
+		2. item 2.2
+	3. item3
+```
+function sayHi() {
+	alert("Hello world!");
+}
+sayHi();
+```
+> 引用部分
+还有一些**行级**元素，比如链接到[IFE-百度前端学院](http://ife.baidu.com "IFE")……再比如`code`...
+## 2.遗留问题
+* 不能解析多层嵌套
+* 编辑框没有自动行号
+* 代码无高亮
+* 某些段落不能正确解析
+					</textarea>
+				</form>
+			</section>
+		<section class="markdown-content">
+				<div class="markdown-text">
+				</div>
+			</section>
+	</div>
+	
+	<script type="text/javascript" src="js/global.js" ></script>
+	</body>
+</html>
